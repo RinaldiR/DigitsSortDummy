@@ -8,6 +8,36 @@
 
         // TODO: implement your program
 
+        int actualDigit = 0;
+
+        do
+        {
+            
+                if (actualDigit == 0)
+                {
+                    actualDigit++;
+                }
+                else if (actualDigit == 5)
+                {
+                    actualDigit++;
+                }
+            int zahl = inputValue;
+            while (zahl > 0)
+            {
+                int firstNumber = zahl % 10;
+                zahl /= 10;
+                if (firstNumber == actualDigit)
+                {
+                    Console.WriteLine(actualDigit);
+                }
+
+            }
+            actualDigit++;
+        } while (actualDigit != 9);
+        
+        
+
+
     }
 
     static int ReadInt()
